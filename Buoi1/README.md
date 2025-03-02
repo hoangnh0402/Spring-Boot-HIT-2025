@@ -136,6 +136,8 @@ public class User {
     - Class được đánh dấu là Component sẽ tự tạo ra 1 instance và đưa vào ApplicationContext để quản lý
   - @Autowired:
     - Đánh dấu các dependancy là Autowired giúp spring tự inject 1 instance của depandency được đánh dấu là bean bằng @Component
+  - @Primary: Ưu tiên sử dụng bean này khi có nhiều bean cùng loại
+  - @Qualifier: Chỉ định rõ bean cần dùng
 - Áp dụng Spring IoC với @Component và @Autowired: Spring sẽ tự động tạo và quản lý các dependency giúp ta.
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
